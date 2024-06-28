@@ -1,0 +1,191 @@
+@import "variables";
+
+body {
+    background-color: $skyblue;
+    margin: 0;
+}
+
+/* Desktop */
+
+@media only screen and (min-width: $desktop) {
+
+    .row-1, .row-2, .row-3, .row-4 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        color: $white;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 96px;
+        text-align: center;
+        margin-bottom: 20px;
+        line-height: 223px;
+        height: 223px;
+
+        .box-de {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            width: 80%;
+        }
+        
+        .box-a {
+            width: 75%;
+            background: $yellow;
+        }
+        
+        .box-b {
+            width: 25%;
+            background: $red;
+        }
+        
+        .box-c {
+            width: 100%;
+            background: $green;
+        }
+        
+        .box-d {
+            width: 40%;
+            background: $blue;
+        }
+        
+        .box-e {
+            width: 60%;
+            background: $oceanblue;
+        }
+        
+        .box-f {
+            width: 20%;
+            background: $purple;
+        }
+        
+        .box-g {
+            width: 25%;
+            background: $yellow;
+        }
+        
+        .box-h {
+            width: 75%;
+            background: $pink;
+        }
+    }
+}
+
+/* Tablet */
+
+@media only screen
+and (min-width: $tablet1)
+and (max-width: $tablet2) {
+
+    .row-1, .row-2, .box-de, .box-f, .row-4 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        color: $white;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 96px;
+        text-align: center;
+        margin-bottom: 20px;
+        line-height: 223px;
+        height: 223px;
+
+        .box-a {
+            width: 60%;
+            background: $white;
+            color: $black;
+        }
+        
+        .box-b {
+            width: 40%;
+            background: $red;
+        }
+        
+        .box-c {
+            width: 100%;
+            height: 223px;
+            background: $purple;
+        }
+        
+        .box-d {
+            width: 40%;
+            background: $blue;
+        }
+        
+        .box-e {
+            width: 60%;
+            background: $darkgreen;
+        }
+        
+        .box-g {
+            width: 50%;
+            background: $yellow;
+        }
+        
+        .box-h {
+            width: 50%;
+            background: $pink;
+        }
+    }
+
+    .box-f {
+        justify-content: center;
+        width: 100%;
+        background: $purple;
+    }
+}
+
+/* Mobile */
+
+@media only screen and (max-width: $mobile) {
+ 
+    .box-a, .box-b, .box-c, .box-d, .box-e, .box-f, .box-g, .box-h {
+        width: 100%;
+        height: 223px;
+        margin-bottom: 20px;
+        line-height: 223px;
+        text-align: center;
+        color: $white;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 96px;
+    }
+    
+    .box-a {
+        background: $yellow;
+    }
+    
+    .box-b {
+        background: $oceanblue;
+    }
+    
+    .box-c {
+        background: $red;
+    }
+    
+    .box-d {
+        background: $blue;
+    }
+    
+    .box-e {
+        background: $yellow;
+        color: $red;
+    }
+    
+    .box-f {
+        background: $blue;
+    }
+    
+    .box-g {
+        background: $green;
+        color: $oceanblue;
+    }
+    
+    .box-h {
+        display: none;
+        visibility: hidden;
+    }
+}
