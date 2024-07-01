@@ -1,0 +1,97 @@
+@import "variables";
+
+html, body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    padding: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    img {
+        padding-left: 30px
+    }
+
+    /* Header Big Screens */
+
+    @media only screen and (min-width: $desktop) {
+
+        li {
+            display: inline-block;
+            margin-right: 30px;
+            cursor: pointer;
+        }
+
+        button {
+            padding: 7px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-right: 30px;
+            color: #fff;
+            border: none;
+            border-radius: 100px;
+            background: $themecolor;
+            cursor: pointer;
+        }
+
+        .hamburger {
+            display: none;
+        }
+    }
+
+    /* Header Small Screens */
+
+    @media only screen and (max-width: $tablet2) {
+
+        .mainmenu, button {
+            display: none
+        }
+
+        .hamburger {
+            margin-top: 180px;
+            margin-right: 30px;
+            width: 120px;
+            height: 200px;
+        }
+
+        .hamburger label {
+            margin-left: 100px;
+            cursor: pointer;
+        }
+
+        .hamburger ul {
+            background: $themecolor;
+            color: #fff;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .hamburger li {
+            display: block;
+            text-align: right;
+            line-height: 30px;
+            cursor: pointer;
+        }
+
+        input[type='checkbox']:not(:checked)+ul {
+            display: none;
+        }
+
+        nav input[type='checkbox'] {
+            display: none;
+        }
+    }
+}
