@@ -1,0 +1,80 @@
+.stats {
+    @include container;
+    height: 60px;
+    display: flex;
+    text-transform: uppercase;
+
+    /* Desktop */
+
+    @media only screen and (min-width: $desktop) {
+
+        .statbox {
+        margin-left: 100px;
+        margin-right: 100px;
+        text-align: center;
+
+            .stattitle {
+            font-weight: 600;
+            font-size: 3rem;
+            line-height: 80px;
+            }
+
+            .statdesc {
+                font-weight: 500;
+                color: $secondcolor;
+            }
+        }
+    }
+
+    /* Tablet */
+
+    @media only screen
+    and (min-width: $tablet1)
+    and (max-width: $tablet2) {
+
+        .statbox {
+        margin-left: 60px;
+        margin-right: 60px;
+        text-align: center;
+
+            .stattitle {
+            font-weight: 600;
+            font-size: 3rem;
+            line-height: 80px;
+            }
+
+            .statdesc {
+                font-weight: 500;
+                color: $secondcolor;
+            }
+        }
+    }
+
+    /* Mobile */
+
+    @media only screen and (max-width: $mobile) {
+
+        max-width: 720px;
+        min-width: 495px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .statbox {
+        margin-left: 60px;
+        margin-right: 60px;
+        text-align: center;
+
+            .stattitle {
+            font-weight: 600;
+            font-size: 3rem;
+            line-height: 80px;
+            }
+
+            .statdesc {
+                font-weight: 500;
+                color: $secondcolor;
+            }
+        }
+    }
+
+}
